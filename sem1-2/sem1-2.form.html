@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    
+	<head> 
+		<meta charset=«utf-8»>
+		<title>Семинар 1-2.Задача 1. Реализовать форму опроса</title> 
+        <style>
+            body {
+                background-image: url(https://i.pinimg.com/564x/70/c6/25/70c6250a7edd364cda447a9f686a1289.jpg); 
+                background-color: #c7b39b; 
+            }
+            h1 {
+                text-align: center;
+                color: white;
+                font-family: "Verdana";
+                margin-top: 50px;
+            }
+            fieldset {
+                background-color: white;
+                font-family: "Verdana";
+                margin: 50px 150px;
+                border-radius: 10px;
+                border-color: coral; 
+                border-width: thick;
+            }
+            p {
+                margin-left: 70px;
+                margin-right: 70px;
+                
+            }
+            legend {
+                text-align: center;
+            }
+        </style>
+	</head>
+
+	<body>
+        <h1>Good vibes form</h1>
+        <form>
+            
+            <fieldset >
+                <legend>Tell us something positive, that happened to you today</legend>
+                <p><label>Name <input type="text" required placeholder="Enter your name"></label></p>
+                <p><label>Email <input type="email" required placeholder="Enter your email"></label></p>
+                <p><label>On a scale 1 to 10 how good was it? <input type="text" placeholder="Enter a number between 1 and 10" maxlength="12"></label></p>
+        
+                <p><label>Where did your positive experience happed?
+                    <select name="place">
+                        <optgroup label="At home">
+                            <option value="1">In a kitchen</option>
+                            <option value="2">In a living room</option>
+                            <option value="3">In your room</option>
+                        </optgroup>
+                        <optgroup label="At work">
+                            <option value="4">In your office</option>
+                            <option value="5">In a daily room</option>
+                        </optgroup>
+                            <optgroup label="Outside">
+                            <option value="7">In a park</option>
+                            <option value="8">On a street</option>
+                            <option value="9">In a cafe</option>
+                            <option value="10">In a public transport</option>
+                            <option value="11">In your car</option>
+                        </optgroup>
+                    </select>
+                </label></p>
+                
+                <p><label>At what time did it happened? 
+                    <input type="radio" name="web" value="rad1">Morning
+                    <input type="radio" name="web" value="rad2">Afternoon
+                    <input type="radio" name="web" value="rad3">Evening
+                    <input type="radio" name="web" value="rad4">Night
+                </label></p>
+                
+                <p><label>What did you experience (select all that apply)
+                    <input type="checkbox">Excited
+                    <input type="checkbox">Loved
+                    <input type="checkbox">Amazed
+                    <input type="checkbox">Bodacious
+                    <input type="checkbox">Fabulous
+                </label></p>
+
+                <p><label>Please describe you positive experience here <textarea name="text1" rows="5" cols="50" placeholder="Enter your expirience here"></textarea></label></p>
+                
+                <p><input type="submit" value="Submit"></p>
+
+            
+            </fieldset>
+            
+        </form>
+        
+	</body>
+
+</html>
