@@ -1,0 +1,53 @@
+h1 {
+    text-align: center;
+    font-style: italic;
+    font-size: 150%;
+    /*border:ridge white;   */  
+    padding: 10px; /* Поля */
+    color: #fff; /* Цвет текста */    
+    min-height: 40px; /* Минимальная высота */
+    background-color: color: rgb(25, 25, 31);
+
+}
+h6{
+    text-align: center;
+    font-size: 150%;
+    color: rgb(25, 25, 31);
+}
+
+#background-color {
+    background-clip:unset;
+    background-color:#ffffff;
+    color:white
+
+}
+#aaa{
+    
+    text-align: center;
+    color: rgb(25, 25, 31);
+}
+#a{
+    
+    text-align: left;
+    
+}
+#a{
+    
+    text-align: left;
+    
+}
+.data #carouselExampleIndicators{
+    padding: 5%;
+}
+
+.carousel-inner{
+    padding: 5%;
+}
+
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+#exampleFormControlSelect1 {
+  margin-left: 10%;
+}
