@@ -30,3 +30,23 @@ for (let row = 1; row < 9; row++) {
 }
 console.log(chess);
 
+console.log('Задание 4'); // Минимум. Напишите функцию min, принимающую два аргумента, и возвращающую минимальный из них.
+function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+console.log('Задание 5'); // Считаем бобы. 
+function countBs(str, value){
+    let count = 0;
+    for (let i = 1; i <= (str.length - 1); i++) {
+        if (str.charAt(i) == value) {
+            count += 1;
+        }
+    }
+    return console.log(`Количество букв ${value} в строке ${str} равно ${count}`);
+}
+countBs('Here is our string', 'e');
