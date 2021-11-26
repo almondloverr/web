@@ -50,3 +50,56 @@ function countBs(str, value){
     return console.log(`Количество букв ${value} в строке ${str} равно ${count}`);
 }
 countBs('Here is our string', 'e');
+
+console.log('Задание 6'); // Сумма диапазона. 
+function range(start, end, step) {
+    var i = start;
+    arr = [];
+    if (!step) {  
+        step = 1
+    }
+    if (step < 0) {
+        start = end; 
+        end = i;
+    }
+    for (; i >= start && i <= end; i += step) {  // Переменнаяя уже объявлена
+        arr.push(i); 
+    }
+    return arr;
+}
+
+function sum(arr) {
+    var counter = arr[0];
+    for (var i = arr[0]; i < arr.length; i++) {
+        counter += arr[i];
+    }
+    return counter
+}
+
+console.log('Sum of the range(1, 10): ' + sum(range(1, 10)));
+console.log('Range (5, 2, -1): ' + range(5, 2, -1));
+
+
+console.log('Задание 7')  // Обращаем массив вспять.
+function reverseArray(array){
+    var newArray1 = [];
+    for (var i = array.length; i > 0; i--){
+        newArray1.push(array.pop());
+    }
+    return newArray1;
+}
+  
+function reverseArrayInPlace(array){ 
+    var newArray2 = [];
+    for (var i = array.length; i > 0; i--){
+        newArray2.push(array.pop()); 
+    }
+    for (var j = newArray2.length; j > 0; j--){
+        array.unshift(newArray2.pop());  
+    }
+    return array;
+};
+
+console.log('Reverse of [1, 2, 3] by reverseArray: '+reverseArray([1, 2, 3]));
+var array3 = [1, 2, 3]; 
+console.log('Reverse of array3=[1, 2, 3] by reverseArrayInPlace: '+reverseArrayInPlace(array3));
