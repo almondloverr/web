@@ -23,7 +23,7 @@ var wins = [
 // цикл дял добавления наших игровых клеток
 for(var i = 1; i <= 9; i++) {
     playboard.innerHTML += f`<div class = 'cell' pos = ${i}></div>`;
-}
+};
 
 // отслеживаем события: нажатие на клетку
 for (var i = 0; i< cell.length; i++) {
@@ -63,6 +63,7 @@ function cellClick() {
     currentPlayer.innerHTML = player.toUpperCase();
 }
 
+// проверка победителя
 function checkWin(data) {
     for(var i in wins) {
         var win = true;
@@ -75,11 +76,12 @@ function checkWin(data) {
             }
         }
 
-        if (win) return true;
+        if(win) return true;
     }
     return false;
 }
 
+// перезагрузка игры 
 function restart(text) {
     alert(text);
     for(var i = 0; i < cell.length; i++) {
