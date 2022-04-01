@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JS4.3</title>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <div id="bio"></div>
+    <div id="pic"></div>
+
+    <script type="text/babel"> 
+        const usrClassName = "math-equation"
+        const style1 = {
+        color:'purple', 
+        fontFamily:'Verdana'
+        };
+
+        ReactDOM.render(
+            <div className={usrClassName} style={style1}>
+            <h2>5 + 2 = {5 + 2}</h2>
+            </div>,
+            document.getElementById("app")
+        )
+    </script>
+
+    <script type="text/babel">
+        const userClassName = "user-info";
+        const style2 = {
+        color:'pink', 
+        fontFamily:'Verdana'
+        };
+
+        const user = {
+        id : 5,
+        age: 19,
+        firstName: 'Анастасия',
+        lastName: 'Лим',
+        getFullName: function(){ 
+            return `${this.firstName} ${this.lastName}`;
+        }
+        };
+
+        ReactDOM.render(
+            <div className={userClassName}  style={style2}>
+                    <p>Полное имя: {user.getFullName()}</p>
+                    <p>Возраст: {user.age}</p>
+            </div>,
+            document.getElementById("bio")
+        )
+    </script>
+
+    <script type="text/babel">
+        const styleObj = {
+				width: "450px",
+				height: "500px"
+			}
+			ReactDOM.render(
+				<img src="https://sun9-79.userapi.com/impf/Hi3c9s7RQcD5-PILE7SJVNMMcCAZNiekLIhKbQ/gZFVw3L5QeI.jpg?size=810x1080&quality=95&sign=22b957bf1e923ac0614c37eafc73f7fa&type=album" alt="Шиншилла по имени Арчи" style={styleObj} />,
+				document.getElementById("pic")
+			);
+    </script>
+   
+</body>
+</html> 

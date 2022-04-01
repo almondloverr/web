@@ -1,0 +1,23 @@
+.my_app
+{
+	border: 2px solid rgb(74, 0, 104);
+	width: 200px;
+	background-color: rgb(224, 150, 253);
+	border-radius: 5px;
+	padding-left: 20px;
+}
+
+button{
+	width: 100px;
+	height:30px;
+	border-radius: 4px;
+	margin:40px;
+}
+.on{
+	color:rgb(57, 0, 68);
+	background-color: rgb(248, 218, 255);
+}
+.off{
+	color:rgb(255, 255, 255);
+	background-color: rgb(36, 0, 34);
+}
